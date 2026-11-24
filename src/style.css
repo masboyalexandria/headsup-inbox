@@ -1,0 +1,38 @@
+:root {
+  --hud-green: #3dff7a;
+  --hud-dim: #1d9e4b;
+  --hud-bg: #001405;
+  --page-bg: #0b0f0c;
+  --ink: #e8f5ec;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page-bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { margin: 0; font-size: 26px; }
+.sub { color: #9db8a5; margin: 6px 0 0; }
+.mode { color: var(--hud-green); font-weight: 600; }
+.hud-wrap h2, .phone h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .08em; color: #9db8a5; }
+.hud {
+  width: 576px; max-width: 100%; aspect-ratio: 2 / 1;
+  background: var(--hud-bg); color: var(--hud-green);
+  border: 2px solid var(--hud-dim); border-radius: 10px;
+  padding: 14px 18px; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  overflow: hidden;
+}
+.hud .hud-head { font-size: 15px; letter-spacing: .12em; border-bottom: 1px solid var(--hud-dim); padding-bottom: 6px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+.hud .hud-item { font-size: 17px; line-height: 1.45; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hud .hud-item.sel { background: var(--hud-green); color: var(--hud-bg); }
+.hud .hud-item .tag { color: var(--hud-dim); }
+.hud .hud-item.sel .tag { color: var(--hud-bg); }
+.hud .hud-foot { margin-top: 8px; font-size: 13px; color: var(--hud-dim); }
+.hud .hud-draft { font-size: 16px; line-height: 1.5; white-space: pre-wrap; }
+.hint { color: #9db8a5; font-size: 13px; }
+.phone .msg { border: 1px solid #26332a; border-radius: 10px; padding: 12px 14px; margin: 10px 0; background: #10160f; }
+.phone .msg b { color: var(--hud-green); }
+.phone .msg .meta { color: #9db8a5; font-size: 13px; }
+.phone .msg .digest { margin: 6px 0 0; }
+.phone button { background: var(--hud-green); color: #001405; border: 0; border-radius: 8px; padding: 8px 14px; font-weight: 700; cursor: pointer; margin-right: 8px; }
+.phone button.ghost { background: transparent; color: var(--hud-green); border: 1px solid var(--hud-dim); }
+.draft-box { border: 1px dashed var(--hud-dim); border-radius: 10px; padding: 12px 14px; margin-top: 12px; }
+.draft-box p { margin: 4px 0; }
+.sent { color: var(--hud-green); font-weight: 700; }
