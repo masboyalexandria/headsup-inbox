@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeadsUp Inbox — Even G2</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>HeadsUp Inbox</h1>
+        <p class="sub">Telegram digest + draf balasan AI untuk kacamata Even G2 · Even Realities “Heads Up”</p>
+        <p id="mode" class="mode">Menghubungkan ke Even App…</p>
+      </header>
+
+      <section class="hud-wrap">
+        <h2>HUD kacamata · 576 × 288</h2>
+        <div id="hud" class="hud" aria-label="Pratinjau HUD kacamata"></div>
+        <p class="hint">Di kacamata asli / simulator, tampilan ini dirender lewat Even Hub SDK (container list + teks). Di browser biasa, ini pratinjau yang sama persis isinya.</p>
+      </section>
+
+      <section class="phone">
+        <h2>Panel HP (demo)</h2>
+        <div id="inbox"></div>
+        <div id="draft-panel"></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
